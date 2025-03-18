@@ -16,7 +16,7 @@ export class UserCreatedDomainEvent extends NotificationData {
 	}
 
 	public get emailId(): string {
-		return this.emailId;
+		return this._emailId;
 	}
 
 	public get fullName(): string {

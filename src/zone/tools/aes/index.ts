@@ -9,9 +9,14 @@ import { AES } from '@/shared/utils/helpers/aes';
 //console.log('Hello World!');
 
 // Request Body
+// export const requestBody = {
+// 	title: 'Shopping groceries',
+// 	description: 'Eggs, milk, bread, and cheese',
+// };
+
 export const requestBody = {
-	title: 'Shopping groceries',
-	description: 'Eggs, milk, bread, and cheese',
+	fullName:"Joy",
+  email:"joy@gmail.com"
 };
 
 const aes = new AES(ENCRYPTION_KEY);
@@ -32,6 +37,6 @@ encryptAsync()
 	.then()
 	.catch((ex) => console.log('ex: ', ex));
 
-// decryptAsync("130b3f9afd550f94aedf7315176cb2e7:42cb98153d8ab2d95b1c6bc308ae228d6b5bb4306f25e3a5b18fb9d19cb99a746a332d5354880adfdc0bb27fe6edb94a")
+// decryptAsync("80f27271314805e19eea9413c0af9704:72ab93e12c3b3cf9b27373857e814dbcacc87a65668f9caf16b8594d2552b40403ecab17390c72cd76cb73e404a9d24f")
 //     .then()
 //     .catch((ex)=>console.log("ex:",ex));
