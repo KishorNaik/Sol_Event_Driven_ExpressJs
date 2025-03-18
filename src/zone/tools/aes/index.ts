@@ -15,8 +15,8 @@ import { AES } from '@/shared/utils/helpers/aes';
 // };
 
 export const requestBody = {
-	fullName:"Joy",
-  email:"joy@gmail.com"
+	fullName: 'Joy',
+	email: 'joy@gmail.com',
 };
 
 const aes = new AES(ENCRYPTION_KEY);
